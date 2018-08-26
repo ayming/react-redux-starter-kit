@@ -2,11 +2,11 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
 
-import Home from './Home'
+import HomeView from './HomeView'
 
-describe('Home', () => {
+describe('HomeView', () => {
   test('renders correctly', () => {
-    const wrapper = renderer.create(<Home />).toJSON()
+    const wrapper = renderer.create(<HomeView />).toJSON()
 
     expect(wrapper).toMatchSnapshot()
   })

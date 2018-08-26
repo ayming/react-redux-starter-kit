@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Layout from '../../components/Layout'
-import NotFound from './components/NotFound'
+import NotFoundView from './components/NotFoundView'
 
 function action() {
   return {
@@ -9,7 +9,7 @@ function action() {
     title: 'Page Not Found',
     component: (
       <Layout>
-        <NotFound />
+        <NotFoundView />
       </Layout>
     ),
   }

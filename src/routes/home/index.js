@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Layout from '../../components/Layout'
-import Home from './components/Home'
+import HomeView from './components/HomeView'
 
 function action() {
   return {
@@ -9,7 +9,7 @@ function action() {
     title: 'Home',
     component: (
       <Layout>
-        <Home />
+        <HomeView />
       </Layout>
     ),
   }

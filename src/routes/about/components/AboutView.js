@@ -1,9 +1,9 @@
 import React, { PureComponent } from 'react'
 
 import Link from '../../../components/Link'
-import s from './About.scss'
+import s from './AboutView.scss'
 
-class About extends PureComponent {
+class AboutView extends PureComponent {
   render() {
     return (
       <div className={s.wrapper}>
@@ -17,4 +17,4 @@ class About extends PureComponent {
   }
 }
 
-export default About
+export default AboutView

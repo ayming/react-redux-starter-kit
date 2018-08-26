@@ -2,9 +2,9 @@ import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 
 import Link from '../../../components/Link'
-import s from './Counter.scss'
+import s from './CounterView.scss'
 
-class Counter extends PureComponent {
+class CounterView extends PureComponent {
   static propTypes = {
     counter: PropTypes.number.isRequired,
     increment: PropTypes.func.isRequired,
@@ -40,4 +40,4 @@ class Counter extends PureComponent {
   }
 }
 
-export default Counter
+export default CounterView

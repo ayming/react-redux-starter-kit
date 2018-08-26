@@ -2,11 +2,11 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
 
-import About from './About'
+import NotFoundView from './NotFoundView'
 
-describe('About', () => {
+describe('NotFound', () => {
   test('renders correctly', () => {
-    const wrapper = renderer.create(<About />).toJSON()
+    const wrapper = renderer.create(<NotFoundView />).toJSON()
 
     expect(wrapper).toMatchSnapshot()
   })

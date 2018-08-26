@@ -1,15 +1,16 @@
 import React, { PureComponent } from 'react'
 
 import Link from '../../../components/Link'
-import s from './Home.scss'
+import s from './HomeView.scss'
 
-class Home extends PureComponent {
+class HomeView extends PureComponent {
   render() {
     return (
       <div className={s.wrapper}>
         <p>
-          To get started, edit <code>src/routes/home/components/Home.js</code>{' '}
-          and save to reload.
+          To get started, edit{' '}
+          <code>src/routes/home/components/HomeView.js</code> and save to
+          reload.
         </p>
         <Link to="/about">ABOUT</Link> <Link to="/counter">COUNTER</Link>
       </div>
@@ -17,4 +18,4 @@ class Home extends PureComponent {
   }
 }
 
-export default Home
+export default HomeView

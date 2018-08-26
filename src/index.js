@@ -129,7 +129,7 @@ async function onLocationChange(location, action) {
 
     // Do a full page reload if error occurs during client-side navigation
     if (!isInitialRender && currentLocation.key === location.key) {
-      console.error('RSK will reload your page after error')
+      console.error('App will reload your page after error')
       window.location.reload()
     }
   }

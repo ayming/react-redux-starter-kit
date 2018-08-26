@@ -1,8 +1,8 @@
 import React, { PureComponent } from 'react'
 
-import s from './NotFound.scss'
+import s from './NotFoundView.scss'
 
-class NotFound extends PureComponent {
+class NotFoundView extends PureComponent {
   render() {
     return (
       <div className={s.wrapper}>
@@ -15,4 +15,4 @@ class NotFound extends PureComponent {
   }
 }
 
-export default NotFound
+export default NotFoundView
