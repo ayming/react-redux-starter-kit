@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CounterView renders correctly 1`] = `
+<div
+  className="wrapper"
+>
+  <p>
+    Counter: 
+    1
+     
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      +
+    </button>
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      -
+    </button>
+  </p>
+  <a
+    href="/"
+    method="push"
+    onClick={[Function]}
+  >
+    HOME
+  </a>
+   
+  <a
+    href="/about"
+    method="push"
+    onClick={[Function]}
+  >
+    ABOUT
+  </a>
+</div>
+`;

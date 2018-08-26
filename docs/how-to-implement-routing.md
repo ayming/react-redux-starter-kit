@@ -114,9 +114,8 @@ and export is as a singleton:
 #### `src/history.js`
 
 ```js
-import createHistory from 'history/lib/createBrowserHistory'
-import useQueries from 'history/lib/useQueries'
-export default useQueries(createHistory)()
+import createBrowserHistory from 'history/createBrowserHistory'
+export default createBrowserHistory()
 ```
 
 Then plug it in, in your client-side bootstrap code as follows:
