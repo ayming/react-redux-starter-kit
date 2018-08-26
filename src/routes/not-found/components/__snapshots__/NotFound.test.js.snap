@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NotFound renders correctly 1`] = `
+<div
+  className="wrapper"
+>
+  <div
+    className="container"
+  >
+    <h1>
+      Error 404
+    </h1>
+    <p>
+      Sorry, the page you were trying to view does not exist.
+    </p>
+  </div>
+</div>
+`;

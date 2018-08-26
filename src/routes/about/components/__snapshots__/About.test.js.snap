@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About renders correctly 1`] = `
+<div
+  className="wrapper"
+>
+  <p>
+    This starter kit is designed to get you up and running with a bunch of awesome front-end technologies.
+  </p>
+  <a
+    href="/"
+    method="push"
+    onClick={[Function]}
+  >
+    HOME
+  </a>
+</div>
+`;

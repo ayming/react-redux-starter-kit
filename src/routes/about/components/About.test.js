@@ -2,11 +2,11 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
 
-import Header from './Header'
+import About from './About'
 
-describe('Header', () => {
+describe('About', () => {
   test('renders correctly', () => {
-    const wrapper = renderer.create(<Header />).toJSON()
+    const wrapper = renderer.create(<About />).toJSON()
 
     expect(wrapper).toMatchSnapshot()
   })

@@ -2,11 +2,11 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
 
-import Header from './Header'
+import NotFound from './NotFound'
 
-describe('Header', () => {
+describe('NotFound', () => {
   test('renders correctly', () => {
-    const wrapper = renderer.create(<Header />).toJSON()
+    const wrapper = renderer.create(<NotFound />).toJSON()
 
     expect(wrapper).toMatchSnapshot()
   })

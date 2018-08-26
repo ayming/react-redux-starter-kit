@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout renders children correctly 1`] = `
+<div>
+  <header
+    className="wrapper"
+  >
+    <a
+      href="/"
+      method="push"
+      onClick={[Function]}
+    >
+      <img
+        alt="logo"
+        className="logo"
+        src="logo.svg"
+      />
+    </a>
+    <h1
+      className="title"
+    >
+      Welcome to React
+    </h1>
+  </header>
+  <div
+    className="child"
+  />
+</div>
+`;
