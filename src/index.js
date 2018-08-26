@@ -5,12 +5,28 @@ import deepForceUpdate from 'react-deep-force-update'
 import qs from 'qs'
 import { createPath } from 'history/PathUtils'
 
+import configureStore from './store/configureStore'
+import { injectReducer } from './store/reducers'
 import App from './components/App'
 import history from './history'
 import { updateMeta } from './utils/dom'
 import router from './router'
 
-const context = {}
+// Version Setup
+window.version = __VERSION__
+
+// Global (context) variables that can be easily accessed from any React component
+// https://facebook.github.io/react/docs/context.html
+const context = {
+  // Initialize a new Redux store
+  // http://redux.js.org/docs/basics/UsageWithReact.html
+  store: configureStore({}, { history }),
+  // Inject reducer arbitrarily rather than top level for redux store to replace reducer
+  // https://github.com/davezuko/react-redux-starter-kit/blob/master/src/store/reducers.js
+  // https://medium.com/@jimmy_shen/inject-reducer-arbitrarily-rather-than-top-level-for-redux-store-to-replace-reducer-fdc1060a6a7
+  injectReducer,
+}
+
 const container = document.getElementById('root')
 let currentLocation = history.location
 let appInstance

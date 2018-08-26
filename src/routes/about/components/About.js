@@ -11,7 +11,7 @@ class About extends PureComponent {
           This starter kit is designed to get you up and running with a bunch of
           awesome front-end technologies.
         </p>
-        <Link to="/">HOME</Link>
+        <Link to="/">HOME</Link> <Link to="/counter">COUNTER</Link>
       </div>
     )
   }

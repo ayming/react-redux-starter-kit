@@ -3,6 +3,7 @@
 const fs = require('fs');
 const path = require('path');
 const paths = require('./paths');
+const { name, version } = require('../package.json');
 
 // Make sure that including paths.js after env.js will read .env variables.
 delete require.cache[require.resolve('./paths')];
@@ -85,6 +86,8 @@ function getClientEnvironment(publicUrl) {
       env[key] = JSON.stringify(raw[key]);
       return env;
     }, {}),
+    __NAME__: JSON.stringify(name),
+    __VERSION__: JSON.stringify(version),
   };
 
   return { raw, stringified };

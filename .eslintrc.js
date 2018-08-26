@@ -12,7 +12,10 @@ module.exports = {
 
   plugins: ['flowtype', 'css-modules', 'prettier'],
 
-  globals: {},
+  globals: {
+    __NAME__: false,
+    __VERSION__: false,
+  },
 
   env: {
     browser: true,

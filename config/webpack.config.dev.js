@@ -22,7 +22,6 @@ const publicPath = '/';
 const publicUrl = '';
 // Get environment variables to inject into our app.
 const env = getClientEnvironment(publicUrl);
-console.info(env)
 
 // This is the development configuration.
 // It is focused on developer experience and fast rebuilds.

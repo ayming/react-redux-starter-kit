@@ -11,7 +11,7 @@ class Home extends PureComponent {
           To get started, edit <code>src/routes/home/components/Home.js</code>{' '}
           and save to reload.
         </p>
-        <Link to="/about">ABOUT</Link>
+        <Link to="/about">ABOUT</Link> <Link to="/counter">COUNTER</Link>
       </div>
     )
   }
